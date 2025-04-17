@@ -14,17 +14,11 @@ main{
     flex: 1;
     padding-bottom: 150px;
 }
-header{
-    background: linear-gradient(to bottom, #cedcff, #F0F0F0);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 20px;
-}
-.logo{
-    width: 200px;
-    align-items: center;  
+.logo {
+    width: clamp(100px, 20vw, 200px);
+    max-width: 200px;
+    height: auto;
+    display: block;
 }
 
 a{
@@ -33,24 +27,74 @@ a{
     list-style: none;
     color: #6F85C6;
 }
-/* css nav header */
+/* nav header */
+header { 
+    background: linear-gradient(to bottom, #cedcff, #F0F0F0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+/* Botón hamburguesa (oculto) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #433DD5;
+    margin-left: auto;
+}
+
+/* Estilo  menú */
 nav ul {
     list-style: none;
     padding: 10px;
     margin: 0;
-    display: flex; 
+    display: flex;
     justify-content: flex-end;
     gap: 15px;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-nav ul li{
-    list-style: none;
+
+nav ul li {
     padding: 10px;
     font-weight: bold;
 }
 
+/* Estilo móvil */
+@media (max-width: 800px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%; 
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
+/* informacion banner */
 .banner{
     position: relative;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
 }
 .banner img{
     height: auto;
@@ -63,8 +107,9 @@ nav ul li{
     top: 50%;            
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 150px;
+    font-size: clamp(2rem, 12vw, 200px);
     text-align: center;
+    padding: 0 1rem;
     opacity: 80% ;
 }
 /* css informacion empresa */
@@ -80,18 +125,18 @@ nav ul li{
     font-weight: 300;
     padding: 50px;
 }
-.alinear_h4 {
+.alinear_h5 {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-.alinear_h4 h4{
+.alinear_h5 h5{
     background-color: rgb(64, 51, 175); 
     color: white; 
-    padding: 15px; 
+    padding: 10px; 
     border-radius:20px;
     width: 150px;
-    text-align: center;
 }
 /* css mosaico/ portafolio */
 .mosaico img {
@@ -105,27 +150,64 @@ nav ul li{
     padding: 80px;
 }
 .logos_empresas img {
-width: 150px;
-padding: 20px;
+    width: 150px;
+    padding: 20px;
 }
 /* css footer */
-footer{
+footer {
     background: linear-gradient(to right, #6B83C3, #433DD5);
     color: white;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.redes-sociales{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: end;
-}
-.the_cabros{
-    align-items: end;
-
-}
-footer section h6{
-    background-color: rgb(67, 61, 213);
     padding: 20px;
+    gap: 20px;
+}
+footer h3{
+    align-self: center;
+    
+}
+.footer-arriba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.logo_footer {
+    width: clamp(100px, 20vw, 200px);
+    max-width: 200px;
+    height: auto;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    gap: 10px;
+}
+
+.redes-sociales div {
+    display: flex;
+    gap: 10px;
+}
+.redes-sociales div img {
+    width: 80px;
+    height: auto;
+}
+
+.the-cabros {
+    background-color: rgb(67, 61, 213);
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    align-items: end;
+}
+.the-cabros h6{
+    font-weight: 300; 
 }
 /* css seccion contactanos */
 .formulario_contactanos{
