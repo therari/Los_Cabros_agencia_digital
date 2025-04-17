@@ -1,0 +1,169 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'lato';
+}
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+color: rgb(7, 2, 63);
+}
+main{
+    flex: 1;
+    padding-bottom: 150px;
+}
+header{
+    background: linear-gradient(to bottom, #cedcff, #F0F0F0);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 20px;
+}
+.logo{
+    width: 200px;
+    align-items: center;  
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+    list-style: none;
+    color: #6F85C6;
+}
+/* css nav header */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex; 
+    justify-content: flex-end;
+    gap: 15px;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.banner{
+    position: relative;
+    width: 100%
+}
+.banner img{
+    height: auto;
+    display: block;
+    width: 100%
+}
+.texto_banner{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    text-align: center;
+    opacity: 80% ;
+}
+/* css informacion empresa */
+.texto_agencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: 300;
+    padding: 50px;
+}
+.alinear_h4 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.alinear_h4 h4{
+    background-color: rgb(64, 51, 175); 
+    color: white; 
+    padding: 15px; 
+    border-radius:20px;
+    width: 150px;
+    text-align: center;
+}
+/* css mosaico/ portafolio */
+.mosaico img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+/* css colaboraciones exitosas */
+.colaboraciones{
+    padding: 80px;
+}
+.logos_empresas img {
+width: 150px;
+padding: 20px;
+}
+/* css footer */
+footer{
+    background: linear-gradient(to right, #6B83C3, #433DD5);
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.redes-sociales{
+    align-items: center;
+    text-align: end;
+}
+.the_cabros{
+    align-items: end;
+
+}
+footer section h6{
+    background-color: rgb(67, 61, 213);
+    padding: 20px;
+}
+/* css seccion contactanos */
+.formulario_contactanos{
+    background-color: aquamarine;
+}
+.email_contacto_empleo{
+   background-color: brown;
+   padding: 20px;
+}
+.boton{
+    background-color: rgb(64, 51, 175); 
+    padding: 15px; 
+    border-radius:50px;
+    width: 50%;
+    text-align: center;
+}
+.boton h3{
+    color: white;
+}
+.collage {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 90vw;
+}
+/* css collage */
+.collage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-row: span 2;
+}
