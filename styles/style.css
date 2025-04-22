@@ -138,13 +138,7 @@ nav ul li {
     border-radius:20px;
     width: 150px;
 }
-/* css mosaico/ portafolio */
-.mosaico img {
-    width: 20%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
+
 /* css colaboraciones exitosas */
 .colaboraciones{
     padding: 80px;
@@ -159,40 +153,39 @@ footer {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     padding: 20px;
     gap: 20px;
 }
 footer h3{
-    align-self: center;
-    
+    align-self: center;   
 }
 .footer-arriba {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; /* Distribuye izq y der */
+  align-items: center;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
-
-.logo_footer {
+  
+  .logo_footer {
     width: clamp(100px, 20vw, 200px);
     max-width: 200px;
     height: auto;
-}
-
-.redes-sociales {
+    display: block;
+  }
+  .redes-sociales {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     text-align: right;
+    align-items: flex-end; 
     gap: 10px;
-}
-
+  }
 .redes-sociales div {
     display: flex;
     gap: 10px;
+    align-items: flex-end;
 }
 .redes-sociales div img {
     width: 80px;
@@ -217,35 +210,35 @@ footer h3{
    background-color: brown;
    padding: 20px;
 }
+/* css interacciones */
 .boton{
     background-color: rgb(64, 51, 175); 
     padding: 15px; 
     border-radius:50px;
     width: 50%;
     text-align: center;
+    margin: 0 auto;
 }
 .boton h3{
     color: white;
 }
-.collage {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 90vw;
-}
-/* css collage */
-.collage img {
-    width: 100%;
+/* css mosaico */
+  
+  .mosaico {
+    display: flex;
+    gap: 5px; 
+    padding: 30px;
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 25%; 
+  }
+  
+  .img {
+    display: block;
+    width: 100%; 
     height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.wide {
-    grid-column: span 2;
-}
-
-.tall {
-    grid-row: span 2;
-}
+  }
