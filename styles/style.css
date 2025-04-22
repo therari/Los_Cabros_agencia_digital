@@ -191,7 +191,6 @@ footer h3{
     width: 80px;
     height: auto;
 }
-
 .the-cabros {
     background-color: rgb(67, 61, 213);
     padding: 10px;
@@ -202,6 +201,7 @@ footer h3{
 .the-cabros h6{
     font-weight: 300; 
 }
+
 /* css seccion contactanos */
 .formulario_contactanos{
     background-color: aquamarine;
@@ -210,6 +210,7 @@ footer h3{
    background-color: brown;
    padding: 20px;
 }
+
 /* css interacciones */
 .boton{
     background-color: rgb(64, 51, 175); 
@@ -222,21 +223,19 @@ footer h3{
 .boton h3{
     color: white;
 }
+
 /* css mosaico */
-  
   .mosaico {
     display: flex;
     gap: 5px; 
     padding: 30px;
   }
-  
   .col {
     display: flex;
     flex-direction: column;
     gap: 5px; 
     width: 25%; 
   }
-  
   .img {
     display: block;
     width: 100%; 
