@@ -162,7 +162,7 @@ footer h3{
 }
 .footer-arriba {
   display: flex;
-  justify-content: space-between; /* Distribuye izq y der */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   max-width: 1500px;
@@ -206,11 +206,6 @@ footer h3{
 .formulario_contactanos{
     background-color: aquamarine;
 }
-.email_contacto_empleo{
-   background-color: brown;
-   padding: 20px;
-}
-
 /* css interacciones */
 .boton{
     background-color: rgb(64, 51, 175); 
@@ -241,3 +236,20 @@ footer h3{
     width: 100%; 
     height: auto;
   }
+  /* seccion empleo */
+  .estadosolicitud{
+    display: flex;
+    align-items: center;
+    }
+    .estadosolicitud img {
+        max-width: 5%;
+        height: auto;
+        display: block; 
+        padding: 250px;
+        opacity: 70%;
+    }
+    .email_contacto_empleo{
+        background-color:  rgb(64, 51, 175); 
+        padding: 20px;
+        color: white;
+     }
