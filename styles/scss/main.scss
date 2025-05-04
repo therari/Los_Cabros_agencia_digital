@@ -1,0 +1,129 @@
+/* layout*/
+@use "./layout/footer.scss";
+@use"./layout/header.scss";
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'lato';
+}
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+color: rgb(7, 2, 63);
+}
+main{
+    flex: 1;
+    padding-bottom: 150px;
+}
+/* informacion banner */
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    height: auto;
+    display: block;
+    width: 100%
+}
+.texto_banner{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 12vw, 200px);
+    text-align: center;
+    padding: 0 1rem;
+    opacity: 80% ;
+}
+/* css informacion empresa */
+.texto_agencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    max-width: 800px;
+    margin: 20px auto;
+    font-weight: 300;
+    padding: 50px;
+}
+.alinear_h5 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.alinear_h5 h5{
+    background-color: rgb(64, 51, 175); 
+    color: white; 
+    padding: 10px; 
+    border-radius:20px;
+    width: 150px;
+}
+
+/* css colaboraciones exitosas */
+.colaboraciones{
+    padding: 80px;
+}
+.logos_empresas img {
+    width: 150px;
+    padding: 20px;
+}
+
+
+/* css seccion contactanos */
+.formulario_contactanos{
+    background-color: aquamarine;
+}
+/* css interacciones */
+.boton{
+    background-color: rgb(64, 51, 175); 
+    padding: 15px; 
+    border-radius:50px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.boton h3{
+    color: white;
+}
+
+/* css mosaico */
+  .mosaico {
+    display: flex;
+    gap: 5px; 
+    padding: 30px;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 25%; 
+  }
+  .img {
+    display: block;
+    width: 100%; 
+    height: auto;
+  }
+  /* seccion empleo */
+  .estadosolicitud{
+    display: flex;
+    align-items: center;
+    }
+    .estadosolicitud img {
+        max-width: 5%;
+        height: auto;
+        display: block; 
+        padding: 250px;
+        opacity: 70%;
+    }
+    .email_contacto_empleo{
+        background-color:  rgb(64, 51, 175); 
+        padding: 20px;
+        color: white;
+     }

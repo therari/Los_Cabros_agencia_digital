@@ -1,0 +1,77 @@
+
+.logo {
+    width: clamp(100px, 20vw, 200px);
+    max-width: 200px;
+    height: auto;
+    display: block;
+}
+
+a{
+    font-size: 22px;
+    text-decoration: none;
+    list-style: none;
+    color: #6F85C6;
+}
+/* nav header */
+header { 
+    background: linear-gradient(to bottom, #cedcff, #F0F0F0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+/* Botón hamburguesa (oculto) */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #433DD5;
+    margin-left: auto;
+}
+
+/* Estilo  menú */
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+nav ul li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Estilo móvil */
+@media (max-width: 800px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 100%; 
+        right: 20px;
+        width: 200px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
