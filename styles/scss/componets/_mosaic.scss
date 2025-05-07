@@ -1,0 +1,17 @@
+/* css mosaico */
+.mosaico {
+    display: flex;
+    gap: 5px; 
+    padding: 30px;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    width: 25%; 
+  }
+  .img {
+    display: block;
+    width: 100%; 
+    height: auto;
+  }

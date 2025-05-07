@@ -1,6 +1,12 @@
+/* base*/
+@use"./base/typography";
+/* base*/
+@use"./componets/buttons";
+@use"./componets/mosaic";
 /* layout*/
 @use "./layout/footer.scss";
 @use"./layout/header.scss";
+
 
 html, body{
     height: 100%;
@@ -80,36 +86,9 @@ main{
 .formulario_contactanos{
     background-color: aquamarine;
 }
-/* css interacciones */
-.boton{
-    background-color: rgb(64, 51, 175); 
-    padding: 15px; 
-    border-radius:50px;
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-}
-.boton h3{
-    color: white;
-}
 
-/* css mosaico */
-  .mosaico {
-    display: flex;
-    gap: 5px; 
-    padding: 30px;
-  }
-  .col {
-    display: flex;
-    flex-direction: column;
-    gap: 5px; 
-    width: 25%; 
-  }
-  .img {
-    display: block;
-    width: 100%; 
-    height: auto;
-  }
+
+
   /* seccion empleo */
   .estadosolicitud{
     display: flex;

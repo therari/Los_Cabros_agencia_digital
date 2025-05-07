@@ -1,0 +1,17 @@
+.boton {
+    background-color: rgb(64, 51, 175);
+    padding: 15px;
+    border-radius: 50px;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: rgb(44, 35, 130); /* Más oscuro */
+}
+
+h3 {
+    color: white;
+}
