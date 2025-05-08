@@ -1,0 +1,22 @@
+/* informacion banner */
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    height: auto;
+    display: block;
+    width: 100%
+}
+.texto_banner{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;            
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2rem, 12vw, 200px);
+    text-align: center;
+    padding: 0 1rem;
+    opacity: 80% ;
+}
