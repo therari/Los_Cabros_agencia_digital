@@ -1,0 +1,25 @@
+
+  .seccion_empleo {
+    text-align: center;
+    padding: 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
+
+  }
+  .estadosolicitud{
+    display: flex;
+    align-items: center;
+    }
+    .estadosolicitud img {
+        max-width: 5%;
+        height: auto;
+        display: block; 
+        padding: 250px;
+        opacity: 70%;
+    }
+    .email_contacto_empleo {
+        background-color:  rgb(64, 51, 175); 
+        padding: 40px;
+        color: white;
+     }
+    

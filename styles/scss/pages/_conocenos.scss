@@ -1,0 +1,28 @@
+.info_cabros {
+    display: flex;              /* Utiliza flexbox para alinear los elementos */
+    align-items: center;        /* Alinea verticalmente la imagen y el texto */
+    gap: 20px;     
+    width: 100%;                 /* Espacio entre la imagen y el texto */
+  }
+  
+  .info_cabros img {
+    width: 40%;  
+    padding: 150px;             /* La imagen ocupará un 20% del contenedor */
+  }
+  
+  .info_cabros p {
+    flex: 1;                    /* El párrafo ocupa el espacio restante */
+    margin: 0;                  /* Elimina márgenes por defecto */
+    text-align: center;
+  }
+  .integrante
+  {
+    background-color: gray;
+  }
+
+.integrantes_cabros h2{
+    text-align: center;
+}
+.integrantes_cabros img{
+    width: 20%;
+}

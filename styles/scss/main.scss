@@ -1,12 +1,22 @@
 /* base*/
 @use"./base/typography";
+
 /* components*/
 @use"./componets/buttons";
 @use"./componets/mosaic";
 @use"./componets/banner";
+@use"./componets/colaborations";
+
 /* layout*/
 @use "./layout/footer.scss";
 @use"./layout/header.scss";
+
+/* pages*/
+@use"./pages/empleo";
+@use"./pages/conocenos";
+
+
+
 
 
 html, body{
@@ -52,37 +62,7 @@ main{
     width: 150px;
 }
 
-/* css colaboraciones exitosas */
-.colaboraciones{
-    padding: 80px;
-}
-.logos_empresas img {
-    width: 150px;
-    padding: 20px;
-}
-
-
 /* css seccion contactanos */
 .formulario_contactanos{
     background-color: aquamarine;
 }
-
-
-
-  /* seccion empleo */
-  .estadosolicitud{
-    display: flex;
-    align-items: center;
-    }
-    .estadosolicitud img {
-        max-width: 5%;
-        height: auto;
-        display: block; 
-        padding: 250px;
-        opacity: 70%;
-    }
-    .email_contacto_empleo{
-        background-color:  rgb(64, 51, 175); 
-        padding: 20px;
-        color: white;
-     }

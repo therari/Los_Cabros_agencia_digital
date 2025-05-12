@@ -12,7 +12,7 @@
 }
 
 .boton:hover {
-  background-color: rgb(44, 35, 130); /* Más oscuro */
+  background-color: rgb(44, 35, 130);
 }
 
 h3 {
@@ -64,20 +64,28 @@ h3 {
   opacity: 80%;
 }
 
+/* css colaboraciones exitosas */
+.colaboraciones {
+  padding: 80px;
+}
+
+.logos_empresas img {
+  width: 150px;
+  padding: 20px;
+}
+
 /* layout*/
-/* css footer */
 footer {
   background: linear-gradient(to right, #6B83C3, #433DD5);
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   padding: 20px;
   gap: 20px;
-}
-
-footer h3 {
-  align-self: center;
+  width: 100%;
+  height: 100vh; /* 100% de la altura de la ventana */
+  position: relative;
 }
 
 .footer-arriba {
@@ -87,44 +95,50 @@ footer h3 {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .logo_footer {
   width: clamp(100px, 20vw, 200px);
-  max-width: 200px;
   height: auto;
-  display: block;
 }
 
 .redes-sociales {
   display: flex;
   flex-direction: column;
-  text-align: right;
   align-items: flex-end;
+  text-align: right;
   gap: 10px;
 }
 
 .redes-sociales div {
   display: flex;
   gap: 10px;
-  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .redes-sociales div img {
-  width: 80px;
+  width: clamp(30px, 10vw, 60px);
   height: auto;
+}
+
+footer h3 {
+  font-size: clamp(16px, 2vw, 22px);
+  margin: 0;
 }
 
 .the-cabros {
   background-color: rgb(67, 61, 213);
-  padding: 10px;
+  padding: 10px 20px;
   width: 100%;
   text-align: left;
-  align-items: end;
 }
 
 .the-cabros h6 {
   font-weight: 300;
+  font-size: clamp(12px, 2vw, 16px);
+  margin: 0;
 }
 
 .logo {
@@ -200,6 +214,63 @@ nav ul li {
     display: flex;
   }
 }
+/* pages*/
+.seccion_empleo {
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.estadosolicitud {
+  display: flex;
+  align-items: center;
+}
+
+.estadosolicitud img {
+  max-width: 5%;
+  height: auto;
+  display: block;
+  padding: 250px;
+  opacity: 70%;
+}
+
+.email_contacto_empleo {
+  background-color: rgb(64, 51, 175);
+  padding: 40px;
+  color: white;
+}
+
+.info_cabros {
+  display: flex; /* Utiliza flexbox para alinear los elementos */
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  gap: 20px;
+  width: 100%; /* Espacio entre la imagen y el texto */
+}
+
+.info_cabros img {
+  width: 40%;
+  padding: 150px; /* La imagen ocupará un 20% del contenedor */
+}
+
+.info_cabros p {
+  flex: 1; /* El párrafo ocupa el espacio restante */
+  margin: 0; /* Elimina márgenes por defecto */
+  text-align: center;
+}
+
+.integrante {
+  background-color: gray;
+}
+
+.integrantes_cabros h2 {
+  text-align: center;
+}
+
+.integrantes_cabros img {
+  width: 20%;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -247,39 +318,9 @@ main {
   width: 150px;
 }
 
-/* css colaboraciones exitosas */
-.colaboraciones {
-  padding: 80px;
-}
-
-.logos_empresas img {
-  width: 150px;
-  padding: 20px;
-}
-
 /* css seccion contactanos */
 .formulario_contactanos {
   background-color: aquamarine;
-}
-
-/* seccion empleo */
-.estadosolicitud {
-  display: flex;
-  align-items: center;
-}
-
-.estadosolicitud img {
-  max-width: 5%;
-  height: auto;
-  display: block;
-  padding: 250px;
-  opacity: 70%;
-}
-
-.email_contacto_empleo {
-  background-color: rgb(64, 51, 175);
-  padding: 20px;
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

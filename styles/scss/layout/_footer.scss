@@ -1,54 +1,65 @@
-/* css footer */
 footer {
-    background: linear-gradient(to right, #6B83C3, #433DD5);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 20px;
-    gap: 20px;
+  background: linear-gradient(to right, #6B83C3, #433DD5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  height: 100vh; /* 100% de la altura de la ventana */
+  position: relative;
 }
-footer h3{
-    align-self: center;   
-}
+
 .footer-arriba {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
-  
-  .logo_footer {
-    width: clamp(100px, 20vw, 200px);
-    max-width: 200px;
-    height: auto;
-    display: block;
-  }
-  .redes-sociales {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end; 
-    gap: 10px;
-  }
+
+.logo_footer {
+  width: clamp(100px, 20vw, 200px);
+  height: auto;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 10px;
+}
+
 .redes-sociales div {
-    display: flex;
-    gap: 10px;
-    align-items: flex-end;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
+
 .redes-sociales div img {
-    width: 80px;
-    height: auto;
+  width: clamp(30px, 10vw, 60px);
+  height: auto;
 }
+
+footer h3 {
+  font-size: clamp(16px, 2vw, 22px);
+  margin: 0;
+}
+
 .the-cabros {
-    background-color: rgb(67, 61, 213);
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-    align-items: end;
+  background-color: rgb(67, 61, 213);
+  padding: 10px 20px;
+  width: 100%;
+  text-align: left;
 }
-.the-cabros h6{
-    font-weight: 300; 
+
+.the-cabros h6 {
+  font-weight: 300;
+  font-size: clamp(12px, 2vw, 16px);
+  margin: 0;
 }
