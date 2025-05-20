@@ -14,10 +14,7 @@
 /* pages*/
 @use"./pages/empleo";
 @use"./pages/conocenos";
-
-
-
-
+@use"./pages/contactanos";
 
 html, body{
     height: 100%;
@@ -60,9 +57,4 @@ main{
     padding: 10px; 
     border-radius:20px;
     width: 150px;
-}
-
-/* css seccion contactanos */
-.formulario_contactanos{
-    background-color: aquamarine;
 }

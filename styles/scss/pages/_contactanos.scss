@@ -1,0 +1,51 @@
+.formulario_contactanos {
+    display:flexbox;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #6B83C3;
+    padding: 40px;
+    gap: 40px;
+  }
+  
+  /* Columna de texto */
+  .formulario_contactanos section:first-child {
+    flex: 1;
+    color: #000;
+  }
+.formulario_contactanos {
+    display: flex;
+    align-items: center;        
+    justify-content: center;
+}
+
+  .formulario_contactanos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  .formulario_contactanos p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 400px;
+  }
+  
+  /* Formulario */
+  .formulario_contactanos form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario_contactanos textarea {
+    background-color: #fff;
+    border: none;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  

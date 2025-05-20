@@ -1,19 +1,20 @@
 .info_cabros {
-    display: flex;              /* Utiliza flexbox para alinear los elementos */
-    align-items: center;        /* Alinea verticalmente la imagen y el texto */
+    display: flex;              
+    align-items: center;        
     gap: 20px;     
-    width: 100%;                 /* Espacio entre la imagen y el texto */
+    width: 100%;                 
   }
   
   .info_cabros img {
     width: 40%;  
-    padding: 150px;             /* La imagen ocupará un 20% del contenedor */
+    padding: 150px;             
   }
   
   .info_cabros p {
-    flex: 1;                    /* El párrafo ocupa el espacio restante */
-    margin: 0;                  /* Elimina márgenes por defecto */
+    flex: 1;                    
+    margin: 0;                  
     text-align: center;
+    margin-bottom: 10px;
   }
   .integrante
   {

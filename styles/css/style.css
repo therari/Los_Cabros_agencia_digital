@@ -19,6 +19,21 @@ h3 {
   color: white;
 }
 
+.formulario_contactanos button {
+  background-color: #433DD5;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.formulario_contactanos button:hover {
+  background-color: rgb(44, 35, 130);
+}
+
 /* css mosaico */
 .mosaico {
   display: flex;
@@ -39,7 +54,6 @@ h3 {
   height: auto;
 }
 
-/* informacion banner */
 .banner {
   position: relative;
   width: 100%;
@@ -242,21 +256,22 @@ nav ul li {
 }
 
 .info_cabros {
-  display: flex; /* Utiliza flexbox para alinear los elementos */
-  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  display: flex;
+  align-items: center;
   gap: 20px;
-  width: 100%; /* Espacio entre la imagen y el texto */
+  width: 100%;
 }
 
 .info_cabros img {
   width: 40%;
-  padding: 150px; /* La imagen ocupará un 20% del contenedor */
+  padding: 150px;
 }
 
 .info_cabros p {
-  flex: 1; /* El párrafo ocupa el espacio restante */
-  margin: 0; /* Elimina márgenes por defecto */
+  flex: 1;
+  margin: 0;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .integrante {
@@ -269,6 +284,58 @@ nav ul li {
 
 .integrantes_cabros img {
   width: 20%;
+}
+
+.formulario_contactanos {
+  display: flexbox;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #6B83C3;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* Columna de texto */
+.formulario_contactanos section:first-child {
+  flex: 1;
+  color: #000;
+}
+
+.formulario_contactanos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario_contactanos h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.formulario_contactanos p {
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+/* Formulario */
+.formulario_contactanos form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_contactanos textarea {
+  background-color: #fff;
+  border: none;
+  padding: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 html, body {
@@ -316,11 +383,6 @@ main {
   padding: 10px;
   border-radius: 20px;
   width: 150px;
-}
-
-/* css seccion contactanos */
-.formulario_contactanos {
-  background-color: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */
